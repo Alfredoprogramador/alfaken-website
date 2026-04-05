@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Idiomas - Alfaken</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0a1929 0%, #050d18 100%);
+            color: #fff;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            background: linear-gradient(135deg, #0066ff 0%, #00ccff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+        
+        .demo-section {
+            background: #112240;
+            border: 1px solid rgba(0, 102, 255, 0.2);
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+        }
+        
+        .demo-section h2 {
+            color: #00ccff;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .lang-selector-demo {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin: 30px 0;
+        }
+        
+        .lang-btn-demo {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #0066ff 0%, #00ccff 100%);
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .lang-btn-demo:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 102, 255, 0.4);
+        }
+        
+        .lang-btn-demo.active {
+            background: linear-gradient(135deg, #003d99 0%, #0066ff 100%);
+            box-shadow: 0 0 20px rgba(0, 102, 255, 0.6);
+        }
+        
+        .demo-text {
+            background: #0a1929;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #00ccff;
+        }
+        
+        .demo-text h3 {
+            color: #00ccff;
+            margin-bottom: 10px;
+        }
+        
+        .demo-text p {
+            color: #8892b0;
+            line-height: 1.8;
+        }
+        
+        .feature-list {
+            list-style: none;
+            margin: 20px 0;
+        }
+        
+        .feature-list li {
+            padding: 10px 0;
+            padding-left: 30px;
+            position: relative;
+            color: #a8b2d1;
+        }
+        
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #00ccff;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-card {
+            background: #0a1929;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid rgba(0, 102, 255, 0.2);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, #0066ff 0%, #00ccff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .stat-label {
+            color: #8892b0;
+            margin-top: 10px;
+        }
+        
+        .open-site-btn {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #0066ff 0%, #00ccff 100%);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .open-site-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 102, 255, 0.5);
+        }
+        
+        code {
+            background: rgba(0, 102, 255, 0.1);
+            padding: 3px 8px;
+            border-radius: 4px;
+            color: #00ccff;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌍 Sistema de Múltiplos Idiomas</h1>
+        
+        <div class="demo-section">
+            <h2>🎯 Demonstração Interativa</h2>
+            <p style="text-align: center; color: #8892b0; margin-bottom: 20px;">
+                Clique nos botões abaixo para ver as traduções em tempo real:
+            </p>
+            
+            <div class="lang-selector-demo">
+                <button class="lang-btn-demo active" onclick="changeDemo('pt')">
+                    🇧🇷 Português
+                </button>
+                <button class="lang-btn-demo" onclick="changeDemo('en')">
+                    🇺🇸 English
+                </button>
+                <button class="lang-btn-demo" onclick="changeDemo('es')">
+                    🇪🇸 Español
+                </button>
+            </div>
+            
+            <div class="demo-text">
+                <h3 id="demo-title">Transformamos Ideias em Soluções Digitais</h3>
+                <p id="demo-description">
+                    Somos a Alfaken Startup, especialistas em desenvolvimento de software, web, e-commerce, 
+                    design e automação. Criamos soluções tecnológicas inovadoras para impulsionar seu negócio.
+                </p>
+            </div>
+            
+            <div class="demo-text">
+                <h3 id="demo-services-title">Nossos Serviços</h3>
+                <ul class="feature-list">
+                    <li id="demo-service-1">Desenvolvimento de Software</li>
+                    <li id="demo-service-2">Desenvolvimento Web</li>
+                    <li id="demo-service-3">E-commerce</li>
+                    <li id="demo-service-4">Design Digital</li>
+                    <li id="demo-service-5">Automação de Processos</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>📊 Estatísticas do Sistema</h2>
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Idiomas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Traduções</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Cobertura</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">&lt;50ms</div>
+                    <div class="stat-label">Tempo de Troca</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2>✨ Características</h2>
+            <ul class="feature-list">
+                <li><strong>Troca Instantânea:</strong> Mudança de idioma sem recarregar a página</li>
+                <li><strong>Persistência:</strong> Preferência salva automaticamente no navegador</li>
+                <li><strong>Completo:</strong> Todas as seções e elementos traduzidos</li>
+                <li><strong>SEO Friendly:</strong> Atributo <code>lang</code> do HTML atualizado automaticamente</li>
+                <li><strong>Responsivo:</strong> Seletor de idiomas adaptado para mobile</li>
+                <li><strong>Manutenível:</strong> Sistema organizado e fácil de expandir</li>
+            </ul>
+        </div>
+        
+        <div class="demo-section">
+            <h2>🛠️ Implementação Técnica</h2>
+            <p style="color: #8892b0; margin-bottom: 20px;">
+                O sistema utiliza:
+            </p>
+            <ul class="feature-list">
+                <li><code>translations.js</code> - Arquivo centralizado com todas as traduções</li>
+                <li><code>LanguageManager</code> - Classe JavaScript para gerenciar idiomas</li>
+                <li><code>data-i18n</code> - Atributos HTML para marcar elementos traduzíveis</li>
+                <li><code>localStorage</code> - Armazenamento da preferência do usuário</li>
+            </ul>
+        </div>
+        
+        <button class="open-site-btn" onclick="window.open('index.html', '_blank')">
+            🚀 Abrir Site Completo
+        </button>
+        
+        <div style="text-align: center; margin-top: 30px; color: #8892b0;">
+            <p>💡 Dica: Abra o site principal e clique nas bandeiras no header para testar!</p>
+        </div>
+    </div>
+
+    <script>
+        const demoTexts = {
+            pt: {
+                title: 'Transformamos Ideias em Soluções Digitais',
+                description: 'Somos a Alfaken Startup, especialistas em desenvolvimento de software, web, e-commerce, design e automação. Criamos soluções tecnológicas inovadoras para impulsionar seu negócio.',
+                servicesTitle: 'Nossos Serviços',
+                service1: 'Desenvolvimento de Software',
+                service2: 'Desenvolvimento Web',
+                service3: 'E-commerce',
+                service4: 'Design Digital',
+                service5: 'Automação de Processos'
+            },
+            en: {
+                title: 'We Transform Ideas into Digital Solutions',
+                description: 'We are Alfaken Startup, specialists in software development, web, e-commerce, design and automation. We create innovative technological solutions to boost your business.',
+                servicesTitle: 'Our Services',
+                service1: 'Software Development',
+                service2: 'Web Development',
+                service3: 'E-commerce',
+                service4: 'Digital Design',
+                service5: 'Process Automation'
+            },
+            es: {
+                title: 'Transformamos Ideas en Soluciones Digitales',
+                description: 'Somos Alfaken Startup, especialistas en desarrollo de software, web, e-commerce, diseño y automatización. Creamos soluciones tecnológicas innovadoras para impulsar su negocio.',
+                servicesTitle: 'Nuestros Servicios',
+                service1: 'Desarrollo de Software',
+                service2: 'Desarrollo Web',
+                service3: 'E-commerce',
+                service4: 'Diseño Digital',
+                service5: 'Automatización de Procesos'
+            }
+        };
+        
+        function changeDemo(lang) {
+            // Update button states
+            document.querySelectorAll('.lang-btn-demo').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+            
+            // Update demo texts
+            const texts = demoTexts[lang];
+            document.getElementById('demo-title').textContent = texts.title;
+            document.getElementById('demo-description').textContent = texts.description;
+            document.getElementById('demo-services-title').textContent = texts.servicesTitle;
+            document.getElementById('demo-service-1').textContent = texts.service1;
+            document.getElementById('demo-service-2').textContent = texts.service2;
+            document.getElementById('demo-service-3').textContent = texts.service3;
+            document.getElementById('demo-service-4').textContent = texts.service4;
+            document.getElementById('demo-service-5').textContent = texts.service5;
+            
+            // Show notification
+            console.log(`🌍 Idioma alterado para: ${lang.toUpperCase()}`);
+        }
+    </script>
+</body>
+</html>

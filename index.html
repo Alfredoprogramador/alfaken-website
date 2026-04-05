@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alfaken Startup - Especialistas em desenvolvimento de software, web, e-commerce, design e automação. Transformamos suas ideias em soluções digitais inovadoras.">
+    <meta name="keywords" content="desenvolvimento web, software, e-commerce, design, automação, startup, tecnologia, React, Node.js, aplicativos mobile">
+    <meta name="author" content="Alfaken Startup">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alfaken.com.br/">
+    <meta property="og:title" content="Alfaken Startup - Soluções Digitais Inovadoras">
+    <meta property="og:description" content="Desenvolvimento de software, web, e-commerce, design e automação. Transformamos suas ideias em realidade.">
+    <meta property="og:image" content="https://alfaken.com.br/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alfaken.com.br/">
+    <meta property="twitter:title" content="Alfaken Startup - Soluções Digitais Inovadoras">
+    <meta property="twitter:description" content="Desenvolvimento de software, web, e-commerce, design e automação.">
+    <meta property="twitter:image" content="https://alfaken.com.br/twitter-image.jpg">
+
+    <title>Alfaken Startup - Desenvolvimento de Software, Web & E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="translations.js"></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1><i class="fas fa-code"></i> Alfaken</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#services" class="nav-link">Serviços</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero.title">Transformamos Ideias em <span class="highlight">Soluções Digitais</span></h1>
+                <p class="hero-description" data-i18n="hero.description">Somos a Alfaken Startup, especialistas em desenvolvimento de software, web, e-commerce, design e automação. Criamos soluções tecnológicas inovadoras para impulsionar seu negócio.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary" data-i18n="hero.btn.portfolio">Ver Portfólio</a>
+                    <a href="#contact" class="btn btn-secondary" data-i18n="hero.btn.contact">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços</h2>
+                <p>Oferecemos soluções completas e personalizadas para todas as necessidades do seu negócio digital</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 data-i18n="service.software.title">Desenvolvimento de Software</h3>
+                    <p data-i18n="service.software.description">Criação de aplicações personalizadas, sistemas corporativos e soluções sob medida utilizando as tecnologias mais modernas do mercado.</p>
+                    <ul class="service-features">
+                        <li data-i18n="service.software.feature1">Aplicações Desktop e Mobile</li>
+                        <li data-i18n="service.software.feature2">APIs e Microserviços</li>
+                        <li data-i18n="service.software.feature3">Integração de Sistemas</li>
+                        <li data-i18n="service.software.feature4">Manutenção e Suporte</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 data-i18n="service.web.title">Desenvolvimento Web</h3>
+                    <p data-i18n="service.web.description">Sites responsivos, aplicações web modernas e portais corporativos com design atraente e funcionalidade impecável.</p>
+                    <ul class="service-features">
+                        <li data-i18n="service.web.feature1">Sites Institucionais</li>
+                        <li data-i18n="service.web.feature2">Aplicações Web Progressivas (PWA)</li>
+                        <li data-i18n="service.web.feature3">Portais Corporativos</li>
+                        <li data-i18n="service.web.feature4">Landing Pages de Alta Conversão</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 data-i18n="service.ecommerce.title">E-commerce</h3>
+                    <p data-i18n="service.ecommerce.description">Lojas virtuais completas e otimizadas para vendas, com integração de pagamentos, gestão de produtos e experiência de compra excepcional.</p>
+                    <ul class="service-features">
+                        <li data-i18n="service.ecommerce.feature1">Plataformas de Venda Online</li>
+                        <li data-i18n="service.ecommerce.feature2">Integração com Meios de Pagamento</li>
+                        <li data-i18n="service.ecommerce.feature3">Sistema de Gestão de Produtos</li>
+                        <li data-i18n="service.ecommerce.feature4">Analytics e Relatórios de Vendas</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 data-i18n="service.design.title">Design Digital</h3>
+                    <p data-i18n="service.design.description">Identidade visual, UX/UI design e interfaces que encantam usuários, criando experiências memoráveis e funcionais.</p>
+                    <ul class="service-features">
+                        <li data-i18n="service.design.feature1">Design de Interface (UI/UX)</li>
+                        <li data-i18n="service.design.feature2">Identidade Visual</li>
+                        <li data-i18n="service.design.feature3">Prototipação e Wireframes</li>
+                        <li data-i18n="service.design.feature4">Design Responsivo</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 data-i18n="service.automation.title">Automação de Processos</h3>
+                    <p data-i18n="service.automation.description">Otimize suas operações com automação inteligente, reduzindo custos e aumentando a eficiência dos seus processos de negócio.</p>
+                    <ul class="service-features">
+                        <li data-i18n="service.automation.feature1">RPA (Robotic Process Automation)</li>
+                        <li data-i18n="service.automation.feature2">Automação de Marketing</li>
+                        <li data-i18n="service.automation.feature3">Workflows Automatizados</li>
+                        <li data-i18n="service.automation.feature4">Integração de Ferramentas</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 data-i18n="service.mobile.title">Aplicativos Mobile</h3>
+                    <p data-i18n="service.mobile.description">Aplicações nativas e multiplataforma para iOS e Android, oferecendo performance e experiência do usuário superiores.</p>
+                    <ul class="service-features">
+                        <li data-i18n="service.mobile.feature1">Apps Nativos (iOS/Android)</li>
+                        <li data-i18n="service.mobile.feature2">Apps Multiplataforma</li>
+                        <li data-i18n="service.mobile.feature3">Design Mobile-First</li>
+                        <li data-i18n="service.mobile.feature4">Publicação nas Lojas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="portfolio.title">Portfólio de Projetos</h2>
+                <p data-i18n="portfolio.subtitle">Conheça alguns dos projetos que desenvolvemos com excelência</p>
+            </div>
+
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all" data-i18n="portfolio.filter.all">Todos</button>
+                <button class="filter-btn" data-filter="web" data-i18n="portfolio.filter.web">Web</button>
+                <button class="filter-btn" data-filter="ecommerce" data-i18n="portfolio.filter.ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="app" data-i18n="portfolio.filter.app">Aplicativos</button>
+                <button class="filter-btn" data-filter="automation" data-i18n="portfolio.filter.automation">Automação</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image ecommerce-bg">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 data-i18n="portfolio.project1.title">Loja Virtual Premium</h3>
+                        <p class="portfolio-category" data-i18n="portfolio.project1.category">E-commerce</p>
+                        <p data-i18n="portfolio.project1.description">Plataforma completa de e-commerce para marca de moda com mais de 5.000 produtos, integração com múltiplos meios de pagamento e sistema de gestão avançado.</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image web-bg">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Portal Corporativo Enterprise</h3>
+                        <p class="portfolio-category">Desenvolvimento Web</p>
+                        <p>Portal corporativo moderno para empresa multinacional, com sistema de gestão de conteúdo, área de colaboradores e integração com sistemas legados.</p>
+                        <div class="portfolio-tags">
+                            <span>Angular</span>
+                            <span>.NET Core</span>
+                            <span>SQL Server</span>
+                            <span>Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="app">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image app-bg">
+                            <i class="fas fa-mobile-screen"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3 data-i18n="portfolio.project3.title">App de Delivery Inteligente</h3>
+                        <p class="portfolio-category" data-i18n="portfolio.project3.category">Aplicativo Mobile</p>
+                        <p data-i18n="portfolio.project3.description">Aplicativo multiplataforma para serviço de delivery com rastreamento em tempo real, sistema de pagamento integrado e programa de fidelidade.</p>
+                        <div class="portfolio-tags">
+                            <span>React Native</span>
+                            <span>Firebase</span>
+                            <span>Google Maps API</span>
+                            <span>Payment Gateway</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="automation">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image automation-bg">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Sistema de Automação Financeira</h3>
+                        <p class="portfolio-category">Automação</p>
+                        <p>Solução de automação para processos financeiros, reduzindo em 70% o tempo de processamento de documentos e eliminando erros manuais.</p>
+                        <div class="portfolio-tags">
+                            <span>Python</span>
+                            <span>RPA</span>
+                            <span>OCR</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image web-bg">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Plataforma de Ensino Online</h3>
+                        <p class="portfolio-category">Desenvolvimento Web</p>
+                        <p>Sistema completo de EAD com streaming de vídeo, gamificação, certificados automáticos e painel de analytics para instrutores.</p>
+                        <div class="portfolio-tags">
+                            <span>Vue.js</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="ecommerce">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image ecommerce-bg">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Marketplace de Alimentos</h3>
+                        <p class="portfolio-category">E-commerce</p>
+                        <p>Marketplace conectando produtores locais a consumidores, com sistema de logística integrado e pagamento facilitado para vendedores.</p>
+                        <div class="portfolio-tags">
+                            <span>Next.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                            <span>Microservices</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="contact.title">Entre em Contato</h2>
+                <p data-i18n="contact.subtitle">Vamos conversar sobre seu próximo projeto e transformar suas ideias em realidade</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 data-i18n="contact.email">Email</h3>
+                            <p>contato@alfaken.com.br</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3 data-i18n="contact.phone">Telefone</h3>
+                            <p>+55 (11) 98765-4321</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 data-i18n="contact.location">Localização</h3>
+                            <p data-i18n="contact.location.value">São Paulo, SP - Brasil</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-i18n="contact.form.name">Nome Completo</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="contact.form.email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-i18n="contact.form.phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="service" data-i18n="contact.form.service">Serviço de Interesse</label>
+                        <select id="service" name="service" required>
+                            <option value="" data-i18n="contact.form.service.placeholder">Selecione um serviço</option>
+                            <option value="software" data-i18n="contact.form.service.software">Desenvolvimento de Software</option>
+                            <option value="web" data-i18n="contact.form.service.web">Desenvolvimento Web</option>
+                            <option value="ecommerce" data-i18n="contact.form.service.ecommerce">E-commerce</option>
+                            <option value="design" data-i18n="contact.form.service.design">Design Digital</option>
+                            <option value="automation" data-i18n="contact.form.service.automation">Automação</option>
+                            <option value="mobile" data-i18n="contact.form.service.mobile">Aplicativos Mobile</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="contact.form.message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.form.submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-code"></i> Alfaken</h3>
+                    <p data-i18n="footer.tagline">Transformando ideias em soluções digitais inovadoras desde 2020.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.services">Serviços</h4>
+                    <ul>
+                        <li><a href="#services" data-i18n="service.software.title">Desenvolvimento de Software</a></li>
+                        <li><a href="#services" data-i18n="service.web.title">Desenvolvimento Web</a></li>
+                        <li><a href="#services" data-i18n="service.ecommerce.title">E-commerce</a></li>
+                        <li><a href="#services" data-i18n="service.automation.title">Automação</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.quicklinks">Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home" data-i18n="nav.home">Início</a></li>
+                        <li><a href="#services" data-i18n="nav.services">Serviços</a></li>
+                        <li><a href="#portfolio" data-i18n="nav.portfolio">Portfólio</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer.newsletter">Newsletter</h4>
+                    <p data-i18n="footer.newsletter.description">Receba novidades e dicas sobre tecnologia.</p>
+                    <form class="newsletter-form">
+                        <input type="email" data-i18n="footer.newsletter.placeholder" placeholder="Seu email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2024 Alfaken Startup. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

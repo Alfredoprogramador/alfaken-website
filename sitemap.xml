@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.alfaken.com.br/</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    
+    <!-- Multi-language alternatives -->
+    <xhtml:link rel="alternate" hreflang="pt-br" href="https://www.alfaken.com.br/?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alfaken.com.br/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.alfaken.com.br/?lang=es" />
+  </url>
+  
+  <!-- Services Section -->
+  <url>
+    <loc>https://www.alfaken.com.br/#services</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Portfolio Section -->
+  <url>
+    <loc>https://www.alfaken.com.br/#portfolio</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://www.alfaken.com.br/#contact</loc>
+    <lastmod>2024-01-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset>

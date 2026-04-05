@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Disallow debug files
+Disallow: /debug-test.html
+Disallow: /test-console.html
+Disallow: /language-demo.html
+Disallow: /debug.ps1
+
+# Sitemap
+Sitemap: https://www.alfaken.com.br/sitemap.xml
