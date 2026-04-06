@@ -1,0 +1,11 @@
+{
+  "name": "alfaken-website",
+  "version": "1.0.0",
+  "description": "Alfaken Startup - Soluções Digitais Inovadoras",
+  "scripts": {
+    "start": "python3 -m http.server 8080 || npx serve -l 8080",
+    "dev": "python3 -m http.server 8080 || npx serve -l 8080"
+  },
+  "author": "Alfaken Startup",
+  "license": "MIT"
+}
